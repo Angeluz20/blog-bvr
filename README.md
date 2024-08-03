@@ -10,6 +10,8 @@ Tecnologias Utilizadas:
     TypeScript
     Node.js
 
+<img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/figma_logo_icon_147289.png" alt="Texto Alternativo" width="50" height="50">
+
 [Template Figma](https://www.figma.com/design/UIopZjBgoQ3olvyDIXfJo4/pf?node-id=0-1&t=AVpKXYyhqyYJLBxz-0)
 
 Comandos para executar a aplicação:
