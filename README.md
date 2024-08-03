@@ -10,7 +10,7 @@ Tecnologias Utilizadas:
     TypeScript
     Node.js
 
-First, run the development server:
+Comandos para executar a aplicação:
 
 ```bash
 npm run dev
