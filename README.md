@@ -12,6 +12,8 @@ Tecnologias Utilizadas:
 
 Comandos para executar a aplicação:
 
+[Template Figma](https://www.figma.com/design/UIopZjBgoQ3olvyDIXfJo4/pf?node-id=0-1&t=AVpKXYyhqyYJLBxz-0)
+
 ```bash
 npm run dev
 # or
