@@ -7,11 +7,24 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens:{
+      "mb": "460px",
+      "sm":"640px",
+      "md":"760px",
+      "lg":"1024px",
+      "xl":"1280px",
+      "2xl":"1536px"
+
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        text:"var(--color-text)",
+        background:"var(--color-background)",
+        green_dark:"var(--color-green-dark)",
+        green_me_dark:"var(--color-green_medium_dark)",
+        green_light: "var(--color-green_light)",
+        green_m: "var(--color-green-medium)",
+        orange: "var(--color-yellow-200)",
       },
     },
   },
