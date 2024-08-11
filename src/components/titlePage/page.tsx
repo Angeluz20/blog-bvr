@@ -8,12 +8,16 @@ type TitleProps = {
 
 export default function TitlePage({ title, subtitle, description }: TitleProps) {
   return (
-    <div className="flex flex-col items-center p-6 w-full">
-      <h1 className="text-2xl text-[#092932]">
+    <div className="flex flex-col items-center py-6 justify-center w-full mt-10">
+      <h1 className="text-3xl text-[#092932] text-center">
         <strong>{title}</strong>
       </h1>
       <h3 className="text-gray-400">{subtitle}</h3>
-      <p className="w-3/5 text-center">{description}</p>
+      {description && (
+        <p className="w-full mt-4 text-md text-justify lg:text-center">
+          {description}
+        </p>
+      )}
     </div>
-  )
+  );
 }
