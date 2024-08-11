@@ -1,3 +1,4 @@
+import {nextui} from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -5,10 +6,10 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/components/(select|listbox|divider|popover|button|ripple|spinner|scroll-shadow).js"
   ],
   theme: {
     screens:{
-      "mb": "460px",
       "sm":"640px",
       "md":"760px",
       "lg":"1024px",
@@ -21,13 +22,13 @@ const config: Config = {
         text:"var(--color-text)",
         background:"var(--color-background)",
         green_dark:"var(--color-green-dark)",
-        green_me_dark:"var(--color-green_medium_dark)",
-        green_light: "var(--color-green_light)",
+        green_me_dark:"var(--color-green-medium-dark)",
+        green_light: "var(--color-green-ligth)",
         green_m: "var(--color-green-medium)",
         orange: "var(--color-yellow-200)",
       },
     },
   },
-  plugins: [],
+  plugins: [nextui()],
 };
 export default config;
