@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen items-center mt-20">
       {/* Hero Section */}
-      <section className="relative w-full bg-gradient-to-r from-[#092932] to-[#0B495A] h-96">
+      <section className="relative w-full bg-gradient-to-r from-[#071f25] to-[#0B495A] h-96">
         <div className="absolute inset-0 h-full">
           <Image
             src={BackgroundBVR}
