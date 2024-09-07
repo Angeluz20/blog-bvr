@@ -20,17 +20,17 @@ export default function News() {
 
     // Array de categorias com ícones
     const category = [
-        { id: "1", title: "Saúde", icon: <MdOutlineHealthAndSafety size={30} color="#083344" /> },
-        { id: "2", title: "Esporte", icon: <FaRunning size={30} color="#083344" /> },
-        { id: "3", title: "Cultura", icon: <FaPalette size={30} color="#083344" /> },
-        { id: "4", title: "Diversas", icon: <FaTheaterMasks size={30} color="#083344" /> },
+        { id: "1", title: "Saúde", icon: <MdOutlineHealthAndSafety size={30} color="#fff" /> },
+        { id: "2", title: "Esporte", icon: <FaRunning size={30} color="#fff" /> },
+        { id: "3", title: "Cultura", icon: <FaPalette size={30} color="#fff" /> },
+        { id: "4", title: "Diversas", icon: <FaTheaterMasks size={30} color="#fff" /> },
     ];
 
     return (
         <div className="flex flex-col min-h-screen mb-4 mt-20">
             <div className="flex flex-col flex-grow w-full items-center">
-                <header className="mb-4 flex flex-col w-full bg-[#e8ecec] items-center">
-                    <TitlePage title="Notícias" subtitle="Explore as notícias da cidade" />
+                <header className="mb-4 flex flex-col w-full bg-gradient-to-r from-[#071f25] to-[#0B495A] items-center">
+                    <TitlePage title="Notícias" subtitle="Explore as notícias da cidade" colorTitle={false}/>
                     <div className="flex xl:w-2/3 items-center justify-center xl:flex-row flex-col mb-10 w-full">
                         <div className="flex shadow p-1 items-center justify-center rounded-xl w-2/3 max-w-lg bg-background mb-4">
                             <CiSearch size={35} className="text-gray-500 m-2" />
@@ -47,10 +47,10 @@ export default function News() {
                         {category.map((item) => (
                             <div
                                 key={item.id}
-                                className="flex cursor-pointer flex-col w-20 h-20 sm:w-32 sm:h-32 hover:border-1 hover:border-[#0d9488] shadow-xl bg-background rounded-2xl justify-center items-center transition-transform transform hover:scale-105"
+                                className="flex cursor-pointer flex-col w-20 h-20 sm:w-20 sm:h-20 border-1 border-white hover:border-[#0d9488] shadow-xl  rounded-2xl justify-center items-center transition-transform transform hover:scale-105"
                             >
                                 {item.icon}
-                                <p className="text-[#083344] text-center text-sm sm:text-base">{item.title}</p>
+                                <p className="text-white text-center text-sm sm:text-base">{item.title}</p>
                             </div>
                         ))}
                     </div>
