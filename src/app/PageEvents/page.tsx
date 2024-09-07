@@ -2,7 +2,7 @@
 import Image from "next/image";
 import TitlePage from "@/components/titlePage/page";
 import ExampleNoticie from "../../../public/assets/festa.jpeg";
-import LetreiroPoster from "../../../public/assets/bvr-letreiro.jpeg";
+import FestaDoMel from "../../../public/assets/festa_do_mel.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import CardDescriptionPage from "@/components/cardEventDescription/page";
@@ -21,18 +21,18 @@ export default function Events() {
     return (
         <div>
             <div className="flex flex-col w-full h-2/3 items-center mt-20">
-                <section className="relative w-full bg-background h-96 ">
+                <section className="relative w-full bg-background h-2/3 ">
                     {/* Imagem de fundo */}
                     <div className="absolute inset-0 h-full">
                         <Image
-                            src={LetreiroPoster}
+                            src={FestaDoMel}
                             alt="background-bvr"
                             layout="fill"
                             objectFit="cover"
                         />
                     </div>
 
-                    <div className="absolute inset-0 h-full bg-[#092932] bg-opacity-80"></div>
+                    <div className="absolute inset-0 h-full bg-[#092932] bg-opacity-90"></div>
 
                     <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-4 text-white">
                         <CardDescriptionPage
